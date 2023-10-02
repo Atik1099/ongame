@@ -1,0 +1,515 @@
+*{
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+p{
+    color: #534C64;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 150px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+    align-items: center;
+}
+.span-red{
+    background: var(--Linear, linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.nav-left{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.nav-left>h1{
+    font-size: 40px;
+    color: #0B0223;
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    color: #3C354F;
+}
+.nav-right a{
+    text-decoration: none;
+    color: #3C354F;
+}
+.nav-right button{
+    border-style: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.banner{
+    margin: 20px 150px;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    justify-content: center;
+}
+.banner-content{
+    background: url('../images/Group\ 14.png');
+}
+.banner-content>h2{
+    font-size: 48px;
+}
+.banner-content>h1{
+    font-size: 96px;
+    font-weight: bolder;
+    background: -webkit-linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+.banner-content>p{
+    color: #534C64;
+}
+.banner-p{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.btn-red{
+    background: var(--Linear, linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%));
+    border-style: none;
+    padding: 15px 35px;
+    border-radius: 25px;
+    font-size: 20px;
+    color: white;
+}
+.btn-blue{
+    background: #4EC5F7;
+    border-style: none;
+    padding: 15px 35px;
+    border-radius: 25px;
+    font-size: 20px;
+    color: white;
+}
+main{
+    margin: 100px 150px;
+}
+.purpose{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.purpose-content{
+    width: 40%;
+    text-align: right;
+}
+.purpose-content>h2{
+    font-size: 48px;
+    font-weight: bold;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.purpose-content>p{
+    margin: 10px 0;
+    color: #534C64;
+}
+.purpose button{
+    margin-bottom: 30px;
+}
+.purpose-p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.span-special{
+    font-weight: bold;
+    background: -webkit-linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+.online-game{
+    margin-top: 150px;
+    text-align: center;
+}
+.online-game>h2{
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.og-list{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+.og-list img{
+    margin-bottom: 20px;
+}
+.play{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.gray{
+    border-radius: 16px;
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 3;
+}
+.magic{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    color: white;
+}
+.gray:hover{
+    filter: brightness(40%);
+    -webkit-filter: brightness(40%);
+    z-index: 1;
+    transition: ease .3s;
+}
+.advertise-1{
+    margin-top: 150px;
+    display: flex;
+    gap: 150px;
+    align-items: center;
+    justify-content: center;
+}
+.ad1-content{
+    text-align: right;
+    width: 70%;
+}
+.advertise-1 h2{
+    font-size: 48px;
+}
+.advertise-1 p{
+    margin-top: 20px;
+}
+.ad-h2{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.ad1-images{
+    position: relative;
+}
+.croper{
+    width: 45%;
+    position: absolute;
+    bottom: -20%;
+    left: -20%;
+    transform: translateX(-20%);
+    transform: translateY(-20%);
+}
+.advertise-2{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 150px;
+    align-items: center;
+    justify-content: center;
+}
+.ad2-content{
+    width: 70%;
+}
+.advertise-2 h2{
+    font-size: 48px;
+}
+.advertise-2 p{
+    margin-top: 20px;
+}
+.ad-h2{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.ad2-images{
+    position: relative;
+}
+.croper2{
+    width: 45%;
+    position: absolute;
+    bottom: -1%;
+    right: -20%;
+    transform: translateX(-10%);
+    transform: translateY( 20%);
+}
+.game-catagory{
+    margin-top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.game-catagory h3{
+    font-size: 18px;
+}
+.cata-box{
+    padding: 5px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.cata-box:hover{
+    border-radius: 50px;
+    box-shadow: var(--Linear, #f83f9f) 0px 3px 8px;
+    transition: ease .5s;
+    background: #FFF;
+    background: var(--Linear, linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+footer{
+    padding: 50px 150px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.footer-title{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.footer-links{
+    width: 80%;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+.footer-links a{
+    text-decoration: none;
+    color: white;
+}
+.logos{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.terms{
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+
+/* mobile view */
+@media (max-width: 480px) {
+    nav{
+        margin-top: 30px;
+        padding: 10px 30px;
+        flex-direction: column;
+        gap: 10px;
+        box-shadow: none;
+    }
+    .nav-right{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .banner{
+        margin: 30px;
+        flex-direction: column-reverse;
+        gap: 50px;
+        text-align: center;
+    }
+    .banner-content>h2{
+        font-size: 40px;
+    }
+    .banner-content>h1{
+        font-size: 72px;
+    }
+    main{
+        margin: 30px;
+    }  
+    .purpose{
+        margin-top: 100px;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .purpose-content{
+        width: 100%;
+        text-align: center;
+    }
+    .og-list{
+        grid-template-columns: repeat(1,1fr);
+        gap: 50px;
+    }
+    .advertise-1{
+        margin-top: 150px;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .ad1-content{
+        text-align: center;
+        width: 100%;
+    }
+    .croper{
+        bottom: -15%;
+        left: -5%;
+        transform: translateX(-15%);
+        transform: translateY(-5%);
+    }
+    .advertise-2{
+        margin-top: 150px;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .ad2-content{
+        text-align: center;
+        width: 100%;
+    }
+    .croper2{
+        bottom: -15%;
+        right: -5%;
+        transform: translateX(-15%);
+        transform: translateY(5%);
+    }
+    .game-catagory{
+        gap: 20px;
+    }
+    .game-catagory h3{
+        font-size: 16px;
+    }
+    .cata-box{
+        width: 40%;
+        text-align: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    footer{
+        padding: 30px;
+    }
+    .footer-links{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+    }
+    .logos{
+        width: 100%;
+        margin-top: 100px;
+        grid-template-columns: repeat(3,1fr);
+        gap: 60px;
+    }
+    .terms{
+        width: 100%;
+        grid-template-columns: repeat(2,1fr);
+        margin-top: 80px;
+        margin-bottom: 50px;
+        gap: 20px;
+    }
+
+}
+
+/* tablet view */
+@media (min-width: 768px) and (max-width: 991px) {
+    nav{
+        padding: 30px 50px;
+    }
+    .nav-left{
+        gap: 10px;
+    }
+    .nav-right{
+        gap: 15px;
+    }
+    .banner{
+        margin: 30px 50px;
+        flex-direction: column-reverse;
+        gap: 50px;
+        text-align: center;
+    }
+    main{
+        margin: 30px 50px;
+    }
+    .purpose{
+        margin-top: 100px;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .purpose-content{
+        width: 100%;
+        text-align: center;
+    }
+    .og-list{
+        grid-template-columns: repeat(2,1fr);
+        gap: 50px;
+    }
+    .advertise-1{
+        margin-top: 150px;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .ad1-content{
+        text-align: center;
+        width: 100%;
+    }
+    .croper{
+        bottom: -15%;
+        left: -10%;
+        transform: translateX(-15%);
+        transform: translateY(-10%);
+    }
+    .advertise-2{
+        margin-top: 150px;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .ad2-content{
+        text-align: center;
+        width: 100%;
+    }
+    .croper2{
+        bottom: -15%;
+        right: -5%;
+        transform: translateX(-15%);
+        transform: translateY(-5%);
+    }
+    .game-catagory{
+        gap: 20px;
+    }
+    .game-catagory h3{
+        font-size: 16px;
+    }
+    .cata-box{
+        width: 20%;
+        text-align: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    footer{
+        padding: 30px 50px;
+    }
+    .footer-links{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+    }
+    .logos{
+        width: 100%;
+        margin-top: 100px;
+        grid-template-columns: repeat(3,1fr);
+        gap: 60px;
+    }
+    .terms{
+        width: 100%;
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+}
